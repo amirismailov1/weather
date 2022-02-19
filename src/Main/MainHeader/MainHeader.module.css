@@ -1,0 +1,145 @@
+.left{
+    width: calc(30% - 25px);
+    background: var(--grey-block);
+    padding: 10px 20px 20px 20px;
+   ;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+.leftTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+.leftTopLeft{
+
+}
+.deg{
+    font-weight: 500;
+    font-size: 96px;
+
+    color: var(--blue);
+}
+.today{
+    font-weight: normal;
+    font-size: 40px;
+}
+.infoText{
+color: var(--grey-text);
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+.infoText:last-of-type{
+    margin-bottom: 0;
+}
+
+.right{
+    padding: 42px 0 42px 32px;
+    background: var(--grey-block);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    width: calc(70% - 25px);
+    position: relative;
+    overflow: hidden;
+}
+.right::before{
+    content: url("../../assets/icons/Cloud.png");
+    position: absolute;
+    width: 60%;
+    height: 66%;
+    top: 0;
+    right: 0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.col{
+    display: flex;
+flex-direction: column;
+    row-gap: 30px;
+
+}
+
+.icon{
+    width: 38px;
+    height: 38px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+    display: flex;
+    justify-content: center;align-items: center;
+    border-radius: 50%;
+
+}
+.text{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey-text);
+    width: 91px;
+}
+.descr{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: white;
+}
+
+.MainHeader{
+    display: flex;
+    column-gap: 50px;
+flex-wrap: wrap;
+
+}
+.left.light{
+    background: white;
+}
+.right.light{
+    background: white;
+}
+
+
+@media (max-width: 768px) {
+    .MainHeader{
+        flex-direction: column;
+        row-gap: 50px;
+
+    }
+    .left{
+        width: 45%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .left{
+        width: 60%
+    }
+}
+@media (max-width: 426px){
+    .left{
+        width: 100%;
+    }
+}
+
+@media ( max-width:376px ){
+    .row{
+        flex-direction: column;
+        align-items: start;
+
+    }
+    .right::before{
+        left: 0;
+    }
+}

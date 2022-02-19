@@ -1,0 +1,71 @@
+.header{
+    padding: 20px 0 30px;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+.form{
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.input{
+    width: 194px;
+    height: 37px;
+    border-radius: 10px;
+    background: var(--grey-block);
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    color: white;
+    font-weight: 500;
+}
+.button{
+    padding: 0 20px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 37px;
+    background: var(--grey-block);
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.title{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.theme{
+    cursor: pointer;
+}
+.theme.light svg path{
+    fill: black;
+}
+.input.light{
+    color: black;
+    background: var(--blue-block);
+}
+.button.light{
+    color: black;
+    background: var(--blue-block);
+}
+@media (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+    }
+
+
+}

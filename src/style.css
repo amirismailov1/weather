@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+    max-width: 1200px;
+
+}
+
+:root{
+    --blue: #4793FF;
+    --grey-block: #4F4F4F;
+    --grey-text:#939CB0;
+    --shadow:2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    --blue-block: rgba(71, 147, 255, 0.2);
+}
+
+.unknownForm{
+    display: flex;
+    justify-content: center;align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.app{
+    background: #0D1117;
+    min-height: 100vh;
+    color: white;
+}
+.app.light {
+    background: white;
+    color: black;
+}
