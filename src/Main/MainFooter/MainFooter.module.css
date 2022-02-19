@@ -90,7 +90,8 @@ overflow-x: auto;box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 
 @media (max-width: 576px){
     .itemDate{
-        width: 31.3%;
+        width: calc(33.33333% - 15px);
+        font-size: 13px;
 
 
     }
@@ -104,15 +105,11 @@ overflow-x: auto;box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
     }
 
 @media (max-width: 426px){
-    .itemDate{
-        width: 30.4%;
-    }
+
     .card{
         width: calc(50% - 10px);
     }
 }
 @media (max-width: 376px){
-    .itemDate{
-        width: 29.95%;
-    }
+
 }
