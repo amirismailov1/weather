@@ -43,21 +43,21 @@ const MainHeader = ({current,isLight}) => {
                     <li className={styles.row}>
                         <div className={styles.icon}><img src={Therm} alt="Temp"/></div>
                         <p className={styles.text}>Temperature</p>
-                        <p className={styles.descr}>{(current.main.temp - 273.15).toFixed()}° - feels like {(current.main.feels_like - 273.15).toFixed()}°</p>
+                        <p className={`${styles.descr} ${isLight?styles.light:''}`}>{(current.main.temp - 273.15).toFixed()}° - feels like {(current.main.feels_like - 273.15).toFixed()}°</p>
                     </li>
                     <li className={styles.row}>
                        <div className={styles.icon}> <img src={Humidity} alt="Humidity"/></div>
                         <p className={styles.text}>Pressure</p>
-                        <p className={styles.descr}>{current.main.pressure} mmHg - normal</p></li>
+                        <p className={`${styles.descr} ${isLight?styles.light:''}`}>{current.main.pressure} mmHg - normal</p></li>
                     <li className={styles.row}>
                         <div className={styles.icon}><img src={Evaporator} alt="Evaporator"/></div>
                         <p className={styles.text}>Precipitation</p>
-                        <p className={styles.descr}>{current.weather[0].description}</p>
+                        <p className={`${styles.descr} ${isLight?styles.light:''}`}>{current.weather[0].description}</p>
                     </li>
                     <li className={styles.row}>
                        <div className={styles.icon}> <img src={Wind} alt="Wind"/></div>
                         <p className={styles.text}>Wind</p>
-                        <p className={styles.descr}>{(current.wind.speed)} m/s  </p>
+                        <p className={`${styles.descr} ${isLight?styles.light:''}`}>{(current.wind.speed)} m/s  </p>
                     </li>
                 </ul>
 

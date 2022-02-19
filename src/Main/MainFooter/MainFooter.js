@@ -8,7 +8,7 @@ const MainFooter = ({fiveDays,date,setDate,isLight}) => {
     return (
        <>
 
-               <h2 className={title}>На 5 дней</h2>
+               <h2 className={title}>Five Days</h2>
                <ul className={listDate}>
                    {
                        [...new Set(
